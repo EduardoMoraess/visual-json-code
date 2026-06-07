@@ -1,61 +1,214 @@
 {
-    "files.autoSave": "afterDelay",
-    "editor.wordWrap": "on",
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 11,
-    "editor.formatOnSave": true,
-    "editor.renderLineHighlight": "gutter",
-    "editor.semanticHighlighting.enabled": false,
-    "editor.guides.indentation": true,
-    "editor.guides.highlightActiveIndentation": true,
-    "editor.linkedEditing": true,
-    "editor.cursorBlinking": "smooth",
-    "editor.smoothScrolling": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 12,
-    "explorer.compactFolders": false,
-    "workbench.sideBar.location": "right",
-    "workbench.activityBar.location": "top",
-    "workbench.productIconTheme": "fluent-icons",
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.iconTheme": "catppuccin-perfect-dark",
-    "workbench.colorCustomizations": {
-        "editor.background": "#1a1f27",
-        "editor.foreground": "#d4d4d4",
-        "sideBar.background": "#181c23",
-        "activityBar.background": "#181c23",
-        "titleBar.activeBackground": "#181c23",
-        "editor.lineHighlightBackground": "#2a2f3a",
-        "editorCursor.foreground": "#c5cdd9",
-        "terminal.background": "#00000000",
-        /* Guias de Indentação Coloridas do segundo JSON */
-        "editorIndentGuide.background1": "#FF4500",
-        "editorIndentGuide.background2": "#FF8C00",
-        "editorIndentGuide.background3": "#32CD32",
-        "editorIndentGuide.background4": "#4682B4",
-        "editorIndentGuide.background5": "#8A2BE2",
-        "editorIndentGuide.activeBackground1": "#FF6347",
-        "editorIndentGuide.activeBackground2": "#FFA500",
-        "editorIndentGuide.activeBackground3": "#00FA9A",
-        "editorIndentGuide.activeBackground4": "#1E90FF",
-        "editorIndentGuide.activeBackground5": "#9370DB"
-    },
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "git.suggestSmartCommit": false,
-    "git.openRepositoryInParentFolders": "never",
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.initialHint": false,
-    "terminal.integrated.fontSize": 12,
-    "background.editorBackgrounds": [
-        "/home/dudu/Downloads/wallpaper.png"
-    ],
-    "background.autoInstall": false,
-    "settingsSync.ignoredSettings": [
-        "workbench.colorCustomizations",
-        "editor.tokenColorCustomizations"
-    ],
-    "workbench.colorTheme": "Night Owl"
+  "workbench.iconTheme": "catppuccin-perfect-dark",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.sideBar.location": "right", // Excelente escolha para evitar que o código "pule" ao abrir a barra
+  "workbench.activityBar.location": "top", // Visual limpo e moderno
+  "workbench.startupEditor": "none", // Sem distrações ao abrir o VS Code
+  "explorer.compactFolders": false, // Facilita a navigation em árvores de pastas profundas
+  "workbench.tree.indent": 14, // Um pouco mais de recuo para melhor legibilidade
+  "workbench.tree.renderIndentGuides": "always",
+  // --- Editor & Tipografia ---
+  "editor.fontSize": 10, // 13px-14px é o sweet spot de produtividade para devs seniores
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', monospace", // Fallbacks adicionados
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.6, // Dá respiro ao código, essencial para leitura rápida
+  "editor.wordWrap": "on",
+  "editor.renderLineHighlight": "all", // Highlight completo ajuda a focar na linha atual
+  "editor.semanticHighlighting.enabled": true,
+  // --- Produtividade & Automação ---
+  "files.autoSave": "afterDelay", // Economiza processamento salvando ao mudar de janela
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true, // Altera tag HTML de abertura/fechamento simultaneamente
+  "editor.tabSize": 2, // Padrão de mercado para a maioria das stacks modernas
+  "editor.insertSpaces": true,
+  // --- Organização Automática de Código ---
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit", // Remove imports limpos e ordena os ativos ao salvar
+    "source.fixAll.eslint": "explicit" // Corrige erros de ESLint automaticamente ao salvar
+  },
+  // --- Indentação Moderna & Escopo (Sticky Scroll) ---
+  "editor.guides.indentation": true,
+  "editor.guides.highlightActiveIndentation": "always",
+  "editor.bracketPairs.enabled": true, // Destaca pares de chaves/parênteses nativamente
+  "editor.bracketPairs.independentColorPoolPerBracketType": true,
+  "editor.stickyScroll.enabled": true, // Fixa o escopo (função/classe) no topo ao rolar o código
+  "editor.stickyScroll.maxLineCount": 5, // Limita a altura do bloco fixo para não poluir a tela
+  "editor.guides.bracketPairs": "active", // Acende a linha exata da indentação de onde você clicou
+  "editor.guides.bracketPairsHorizontal": true, // Cria uma guia na base para fechar visualmente o bloco ativo
+  // --- Git de Alta Performance ---
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true, // Facilita commits rápidos
+  "git.suggestSmartCommit": false,
+  "git.openRepositoryInParentFolders": "never",
+  "git.terminalAuthentication": true,
+  // --- Terminal Integrado ---
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Dark Modern",
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.fontSize": 11,
+  // --- Customizações de Cores (Tema Monster Mango Loco Oficial) ---
+  "workbench.colorCustomizations": {
+    // --- Barra de Status ---
+    "statusBar.background": "#012030", // Azul real da lata
+    "statusBar.foreground": "#a3a39f",
+    "statusBar.noFolderBackground": "#16b7df",
+    // --- Barra Lateral (Sidebar / Explorer) ---
+    "sideBar.background": "#1c1c1c1e", // Voltou para o dark fosco
+    "sideBar.foreground": "#f4f4f4",
+    "sideBar.border": "#16b7df", // Detalhe da borda com o azul correto
+    "sideBarSectionHeader.background": "#1a1a1a",
+    "sideBarSectionHeader.foreground": "#ffd100", // Títulos em Amarelo
+    // --- Editor Principal ---
+    "editor.background": "#1b1a1a",
+    "editor.foreground": "#d0cece",
+    "editorLineNumber.foreground": "#444444",
+    "editorLineNumber.activeForeground": "#ff7a00",
+    "editor.lineHighlightBackground": "#1a1a1a",
+    "editor.selectionBackground": "#16b7df44", // Seleção com o azul correto + opacidade
+    "editor.findMatchBackground": "#e60067aa", // Destaque de busca em Rosa
+    // --- Abas (Tabs) ---
+    "tab.activeBackground": "#1a1a1a",
+    "tab.activeForeground": "#ffd100",
+    "tab.activeBorder": "#ff7a00",
+    "tab.inactiveBackground": "#111111",
+    "tab.inactiveForeground": "#888888",
+    // --- Barra de Atividades (Activity Bar - Topo/Ícones) ---
+    "activityBar.background": "#111111",
+    "activityBar.foreground": "#16b7df", // Ícones ativos com o novo azul
+    "activityBar.inactiveForeground": "#444444",
+    "activityBar.border": "#1a1a1a",
+    // --- Título da Janela ---
+    "titleBar.activeBackground": "#111111",
+    "titleBar.activeForeground": "#f4f4f4",
+    // --- Terminal Integrado ---
+    "terminal.background": "#00000000", // Mantido transparente
+    "terminal.foreground": "#f4f4f4",
+    "terminal.ansiCyan": "#16b7df",
+    "terminal.ansiYellow": "#ffd100",
+    "terminal.ansiRed": "#e60067",
+    "terminal.ansiMagenta": "#ff7a00"
+  },
+  // --- Sintaxe do Código (Token Color Customizations) ---
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Keywords e Operadores (If, Return, etc)",
+        "scope": [
+          "keyword",
+          "storage.type",
+          "storage.modifier",
+          "keyword.operator"
+        ],
+        "settings": {
+          "foreground": "#f7ae2f", // Rosa Mango
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Funções Criadas pelo Usuário",
+        "scope": [
+          "entity.name.function"
+        ],
+        "settings": {
+          "foreground": "#16b7df" // Suas funções continuam brilhando no azul oficial
+        }
+      },
+      {
+        "name": "EDITAR FUNÇÕES NATIVAS AQUI",
+        "scope": [
+          "support.function" // <--- Altera alert(), encodeURIComponent(), isNaN(), etc.
+        ],
+        "settings": {
+          "foreground": "#40e3e3" // <--- Altere essa cor para mudar as funções nativas
+        }
+      },
+      {
+        "name": "Strings (Textos)",
+        "scope": [
+          "string"
+        ],
+        "settings": {
+          "foreground": "#b7837b" // Amarelo
+        }
+      },
+      {
+        "name": "Parâmetros de Funções",
+        "scope": [
+          "variable.parameter",
+          "meta.parameter"
+        ],
+        "settings": {
+          "foreground": "#c78c45", // Parâmetros destacados em Laranja + Itálic
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "name": "Constantes (Variáveis declaradas com const)",
+        "scope": [
+          "variable.other.constant",
+          "variable.other.readwrite.alias",
+          "support.constant"
+        ],
+        "settings": {
+          "foreground": "#f4b4ff", // Verde clarinho moderno para suas consts
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Variáveis Comuns (let, var, etc)",
+        "scope": [
+          "variable",
+          "variable.other.readwrite",
+          "variable.other.object"
+        ],
+        "settings": {
+          "foreground": "#f4f4f4" // Branco limpo
+        }
+      },
+      {
+        "name": "Propriedades de Objetos e Tags HTML",
+        "scope": [
+          "variable.other.property",
+          "meta.tag.attributes"
+        ],
+        "settings": {
+          "foreground": "#1ec0e8" // Laranja Mango
+        }
+      },
+      {
+        "name": "EDITAR TAGS HTML5 AQUI",
+        "scope": [
+          "entity.name.tag"
+        ],
+        "settings": {
+          "foreground": "#3294c9"
+        }
+      },
+      {
+        "name": "Comentários",
+        "scope": [
+          "comment",
+          "punctuation.definition.comment"
+        ],
+        "settings": {
+          "foreground": "#575b58",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Números e Booleanos (true/false)",
+        "scope": [
+          "constant.numeric",
+          "constant.language.boolean"
+        ],
+        "settings": {
+          "foreground": "#ff7a00"
+        }
+      }
+    ]
+  }
 }
