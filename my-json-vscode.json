@@ -47,7 +47,6 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontFamily": "'JetBrains Mono', monospace",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Dark Modern",
   "terminal.integrated.initialHint": false,
   "terminal.integrated.fontSize": 11,
   // --- Customizações de Cores (Tema Monster Mango Loco Oficial) ---
@@ -57,24 +56,24 @@
     "statusBar.foreground": "#a3a39f",
     "statusBar.noFolderBackground": "#16b7df",
     // --- Barra Lateral (Sidebar / Explorer) ---
-    "sideBar.background": "#1c1c1c1e", // Voltou para o dark fosco
+    //"sideBar.background": "#111010", // Voltou para o dark fosco
     "sideBar.foreground": "#f4f4f4",
     "sideBar.border": "#16b7df", // Detalhe da borda com o azul correto
-    "sideBarSectionHeader.background": "#1a1a1a",
+    //"sideBarSectionHeader.background": "#1a1a1a",
     "sideBarSectionHeader.foreground": "#ffd100", // Títulos em Amarelo
     // --- Editor Principal ---
-    "editor.background": "#1b1a1a",
+    //"editor.background": "#1a1625",
     "editor.foreground": "#d0cece",
-    "editorLineNumber.foreground": "#444444",
+    //"editorLineNumber.foreground": "#444444",
     "editorLineNumber.activeForeground": "#ff7a00",
-    "editor.lineHighlightBackground": "#1a1a1a",
+    // "editor.lineHighlightBackground": "#1a1a1a",
     "editor.selectionBackground": "#16b7df44", // Seleção com o azul correto + opacidade
     "editor.findMatchBackground": "#e60067aa", // Destaque de busca em Rosa
     // --- Abas (Tabs) ---
-    "tab.activeBackground": "#1a1a1a",
+    //"tab.activeBackground": "#1a1a1a",
     "tab.activeForeground": "#ffd100",
     "tab.activeBorder": "#ff7a00",
-    "tab.inactiveBackground": "#111111",
+    //"tab.inactiveBackground": "#111111",
     "tab.inactiveForeground": "#888888",
     // --- Barra de Atividades (Activity Bar - Topo/Ícones) ---
     "activityBar.background": "#111111",
@@ -82,7 +81,7 @@
     "activityBar.inactiveForeground": "#444444",
     "activityBar.border": "#1a1a1a",
     // --- Título da Janela ---
-    "titleBar.activeBackground": "#111111",
+    //"titleBar.activeBackground": "#111111",
     "titleBar.activeForeground": "#f4f4f4",
     // --- Terminal Integrado ---
     "terminal.background": "#00000000", // Mantido transparente
@@ -104,7 +103,7 @@
           "keyword.operator"
         ],
         "settings": {
-          "foreground": "#f7ae2f", // Rosa Mango
+          "foreground": "#00c6c7", // Rosa Mango
           "fontStyle": "italic"
         }
       },
@@ -114,7 +113,7 @@
           "entity.name.function"
         ],
         "settings": {
-          "foreground": "#16b7df" // Suas funções continuam brilhando no azul oficial
+          "foreground": "#D2A8FF" // Suas funções continuam brilhando no azul oficial
         }
       },
       {
@@ -132,7 +131,7 @@
           "string"
         ],
         "settings": {
-          "foreground": "#b7837b" // Amarelo
+          "foreground": "#72a9ab" // Amarelo
         }
       },
       {
@@ -142,8 +141,8 @@
           "meta.parameter"
         ],
         "settings": {
-          "foreground": "#c78c45", // Parâmetros destacados em Laranja + Itálic
-          "fontStyle": "bold"
+          "foreground": "#FFA657", // Parâmetros destacados em Laranja + Itálic
+          "fontStyle": "italic"
         }
       },
       {
@@ -154,7 +153,7 @@
           "support.constant"
         ],
         "settings": {
-          "foreground": "#f4b4ff", // Verde clarinho moderno para suas consts
+          "foreground": "#df8ddf", // Verde clarinho moderno para suas consts
           "fontStyle": "italic"
         }
       },
@@ -166,7 +165,7 @@
           "variable.other.object"
         ],
         "settings": {
-          "foreground": "#f4f4f4" // Branco limpo
+          "foreground": "#fffbfb" // Branco limpo
         }
       },
       {
@@ -185,7 +184,7 @@
           "entity.name.tag"
         ],
         "settings": {
-          "foreground": "#3294c9"
+          "foreground": "#069be6"
         }
       },
       {
@@ -195,7 +194,7 @@
           "punctuation.definition.comment"
         ],
         "settings": {
-          "foreground": "#575b58",
+          "foreground": "#11812d",
           "fontStyle": "italic"
         }
       },
@@ -210,5 +209,6 @@
         }
       }
     ]
-  }
+  },
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)"
 }
